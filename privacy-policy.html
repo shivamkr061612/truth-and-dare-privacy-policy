@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Truth &amp; Dare</title>
+  <meta name="description" content="Privacy Policy for Truth &amp; Dare (com.truthdare.techshivam) Android application.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #4F46E5;
+      --primary-dark: #3730A3;
+      --primary-light: #EEF2FF;
+      --accent: #7C3AED;
+      --text-main: #0F172A;
+      --text-muted: #475569;
+      --text-sub: #64748B;
+      --bg-page: #F8FAFC;
+      --bg-card: #FFFFFF;
+      --border-color: #E2E8F0;
+      --badge-bg: #E0E7FF;
+      --badge-text: #3730A3;
+      --success-bg: #DCFCE7;
+      --success-text: #166534;
+      --warning-bg: #FEF3C7;
+      --warning-text: #92400E;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.7;
+      padding: 32px 16px 64px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .header-card {
+      background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+      color: #FFFFFF;
+      border-radius: 24px;
+      padding: 40px 32px;
+      margin-bottom: 32px;
+      box-shadow: 0 12px 30px -10px rgba(79, 70, 229, 0.35);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header-card::after {
+      content: "";
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 320px;
+      height: 320px;
+      background: radial-gradient(circle, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .app-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(8px);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+      line-height: 1.25;
+    }
+
+    .header-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 14px;
+      opacity: 0.92;
+      margin-top: 12px;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .content-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 36px 32px;
+      box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.04);
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-top: 28px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      font-size: 15px;
+    }
+
+    ul, ol {
+      margin-left: 24px;
+      margin-bottom: 20px;
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    li strong {
+      color: var(--text-main);
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .callout {
+      background-color: var(--primary-light);
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 0 12px 12px 0;
+      margin: 20px 0;
+    }
+
+    .callout p {
+      margin: 0;
+      color: var(--primary-dark);
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      margin: 20px 0;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    th {
+      background-color: #F1F5F9;
+      color: var(--text-main);
+      font-weight: 700;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-muted);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .badge-pill {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .badge-normal {
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+    }
+
+    .badge-safe {
+      background-color: var(--success-bg);
+      color: var(--success-text);
+    }
+
+    .contact-box {
+      background: linear-gradient(to right, #F8FAFC, #EEF2FF);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 24px;
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .contact-box strong {
+      color: var(--text-main);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 13px;
+      color: var(--text-sub);
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 16px 12px 48px;
+      }
+      .header-card {
+        padding: 28px 20px;
+        border-radius: 20px;
+      }
+      .content-card {
+        padding: 24px 18px;
+        border-radius: 16px;
+      }
+      h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header Section -->
+    <header class="header-card">
+      <div class="app-badge">Official Privacy Policy</div>
+      <h1>Truth &amp; Dare</h1>
+      <p style="color: rgba(255,255,255,0.9); margin-bottom: 12px; font-size: 16px;">
+        Comprehensive privacy practices and data protection guidelines.
+      </p>
+      <div class="header-meta">
+        <div class="meta-item">
+          <strong>Package ID:</strong> <span>com.truthdare.techshivam</span>
+        </div>
+        <div class="meta-item">
+          <strong>Effective Date:</strong> <span>September 22, 2026</span>
+        </div>
+        <div class="meta-item">
+          <strong>Developer:</strong> <span>techshivam0616@gmail.com</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="content-card">
+      <h2>1. Introduction</h2>
+      <p>
+        Welcome to <strong>Truth &amp; Dare</strong> (the "Application"), developed and published under the package name <code>com.truthdare.techshivam</code>. We respect your privacy and are committed to maintaining a secure, safe, and transparent environment for all players.
+      </p>
+      <p>
+        This Privacy Policy explains how our application operates, what information is processed, and how third-party services (such as Google AdMob and Google Play Core) interact with your device. By installing and using Truth &amp; Dare, you agree to the practices outlined in this policy.
+      </p>
+
+      <div class="callout">
+        <p>
+          <strong>Summary for Users:</strong> Truth &amp; Dare is designed with an offline-first architecture. We do not require account registration, and we do not collect, transmit, or store your personal identity, contact details, or location on any external developer servers.
+        </p>
+      </div>
+
+      <h2>2. Application Features &amp; Data Processing</h2>
+      <p>Truth &amp; Dare offers interactive party gameplay, including:</p>
+      <ul>
+        <li><strong>Truth or Dare Gameplay:</strong> Hundreds of curated challenges across multiple age-appropriate categories (Kids, Teens, Adults, Couples/Spicy, Extreme, and Custom).</li>
+        <li><strong>Spin the Bottle &amp; Lucky Wheel:</strong> Interactive 3D/2D randomizers for player selection and turn determination.</li>
+        <li><strong>Custom Question Builder:</strong> Allows users to create and edit custom truth and dare prompts.</li>
+        <li><strong>Local Player Roster &amp; Scoreboard:</strong> Tracks player names, round scores, completed challenges, and game statistics.</li>
+        <li><strong>Haptics &amp; Audio:</strong> Provides responsive vibration feedback and background music effects.</li>
+        <li><strong>Double Points Bonus:</strong> Optional rewarded feature allowing players to double their challenge points by viewing a short video advertisement.</li>
+      </ul>
+
+      <h2>3. Information We Collect and Store</h2>
+      <h3>A. Local On-Device Data (Not Transmitted to Developers)</h3>
+      <p>
+        All gameplay content created or managed by players is stored <strong>strictly locally</strong> on your device using Android local storage (Room Database and Jetpack DataStore):
+      </p>
+      <ul>
+        <li>Player profiles and names chosen during the setup screen.</li>
+        <li>Scores, round progress, and penalty counts.</li>
+        <li>Custom questions entered through the Custom Question editor.</li>
+        <li>App settings and audio preferences (sound effects, music volume, and vibration toggles).</li>
+      </ul>
+      <p>
+        This local data never leaves your device and is never sent to our servers.
+      </p>
+
+      <h3>B. Personal Data We Do NOT Collect</h3>
+      <p>To ensure complete user privacy, Truth &amp; Dare does not collect or request:</p>
+      <ul>
+        <li>Your real name, postal address, or telephone number.</li>
+        <li>Email address or social media login credentials.</li>
+        <li>GPS or precise device geolocation.</li>
+        <li>Contacts, photos, media files, or microphone/camera recordings.</li>
+        <li>Financial or credit card details.</li>
+      </ul>
+
+      <h2>4. Third-Party Services &amp; Advertising (Google AdMob)</h2>
+      <p>
+        To keep Truth &amp; Dare free to download and play, the Application integrates <strong>Google AdMob</strong>, an advertising service provided by Google LLC, to display ads (including optional Rewarded Video Ads).
+      </p>
+
+      <h3>What AdMob May Collect Automatically</h3>
+      <p>
+        When you connect to the internet, Google AdMob and its advertising partners may collect and process specific device and interaction data in accordance with Google's Privacy Policy, including:
+      </p>
+      <ul>
+        <li><strong>Device Identifiers:</strong> Advertising ID (Google Advertising ID / GAID), device model, operating system version, and screen resolution.</li>
+        <li><strong>Network Information:</strong> General IP address (used for approximate country/city level geolocation) and network connection type.</li>
+        <li><strong>Ad Interaction Data:</strong> Ad impressions, video playback completion, and clicks.</li>
+        <li><strong>Diagnostic &amp; Performance Data:</strong> Crash reports and SDK telemetry to monitor ad rendering performance.</li>
+      </ul>
+
+      <h3>Opting Out of Personalized Advertising</h3>
+      <p>
+        You can reset your device's Advertising ID or opt out of interest-based ads at any time through your Android device settings:
+      </p>
+      <ol>
+        <li>Open your device's <strong>Settings</strong> app.</li>
+        <li>Navigate to <strong>Google</strong> &rarr; <strong>Ads</strong> (or <strong>Privacy</strong> &rarr; <strong>Ads</strong>).</li>
+        <li>Tap <strong>Reset advertising ID</strong> or toggle on <strong>Delete advertising ID / Opt out of Ads Personalization</strong>.</li>
+      </ol>
+      <p>
+        For further details regarding Google's ad privacy practices, please review the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> and <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">Google AdMob Policies</a>.
+      </p>
+
+      <h2>5. Google Play Core Services</h2>
+      <p>The Application includes Google Play Core developer libraries to enhance user experience:</p>
+      <ul>
+        <li><strong>Google Play In-App Updates:</strong> Allows the app to prompt you to download the newest version of Truth &amp; Dare seamlessly from Google Play.</li>
+        <li><strong>Google Play In-App Review:</strong> Enables players to leave a rating and feedback directly on the Google Play Store without disrupting active gameplay.</li>
+      </ul>
+      <p>
+        These services are operated by Google LLC and adhere strictly to the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Play Services Privacy Policy</a>.
+      </p>
+
+      <h2>6. Android Device Permissions</h2>
+      <p>
+        Truth &amp; Dare requests only standard install-time permissions necessary for core gameplay and ad delivery. It requires <strong>zero sensitive or dangerous runtime permissions</strong>:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Permission</th>
+              <th>Type</th>
+              <th>Purpose &amp; Usage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>android.permission.INTERNET</code></td>
+              <td><span class="badge-pill badge-normal">Normal</span></td>
+              <td>Enables network communication to request AdMob advertisements and check for app updates via Google Play.</td>
+            </tr>
+            <tr>
+              <td><code>android.permission.ACCESS_NETWORK_STATE</code></td>
+              <td><span class="badge-pill badge-normal">Normal</span></td>
+              <td>Checks whether an active internet connection is available before requesting ad units.</td>
+            </tr>
+            <tr>
+              <td><code>android.permission.VIBRATE</code></td>
+              <td><span class="badge-pill badge-safe">Normal</span></td>
+              <td>Provides tactile haptic vibrations during bottle spinning and card reveals (can be toggled off in Settings).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>7. Children's Privacy (COPPA &amp; GDPR-K Compliance)</h2>
+      <p>
+        Truth &amp; Dare provides a dedicated <strong>"Kids"</strong> game mode featuring clean, family-friendly questions suitable for younger audiences.
+      </p>
+      <ul>
+        <li>We do not knowingly collect, store, or solicit personally identifiable information from children under the age of 13 (or under 16 in the EEA).</li>
+        <li>If you are a parent or guardian and believe that your child has provided us with personal information through the app, please contact us immediately, and we will take prompt steps to ensure such information is addressed.</li>
+      </ul>
+
+      <h2>8. User Control, Data Retention &amp; Deletion</h2>
+      <p>
+        Because all user preferences, custom cards, and scores are stored exclusively on your device, you have complete and permanent control over your data:
+      </p>
+      <ul>
+        <li><strong>Reset in App:</strong> You can reset scores and clear custom questions at any time within the game settings.</li>
+        <li><strong>Clear All App Data:</strong> Go to Android <em>Settings &rarr; Apps &rarr; Truth &amp; Dare &rarr; Storage &amp; Cache &rarr; Clear Storage</em> to instantly delete all local data.</li>
+        <li><strong>Uninstall:</strong> Uninstalling the application automatically and permanently deletes all local files and databases associated with Truth &amp; Dare.</li>
+      </ul>
+
+      <h2>9. Security</h2>
+      <p>
+        We are dedicated to safeguarding your information. Because the Application does not store user data on remote databases or web servers, your gameplay activity remains strictly confidential to your physical device. Network traffic generated by third-party ad SDKs is encrypted using industry-standard Transport Layer Security (HTTPS/TLS).
+      </p>
+
+      <h2>10. Changes to This Privacy Policy</h2>
+      <p>
+        We may update this Privacy Policy periodically to reflect new features, operational requirements, or legal standards. Any updates will be posted to this page with a revised "Effective Date" at the top. We encourage you to review this page periodically.
+      </p>
+
+      <h2>11. Contact Us</h2>
+      <p>
+        If you have any questions, suggestions, or concerns regarding this Privacy Policy or your privacy while using Truth &amp; Dare, please contact us:
+      </p>
+      <div class="contact-box">
+        <div><strong>Application:</strong> Truth &amp; Dare</div>
+        <div><strong>Package Name:</strong> <code>com.truthdare.techshivam</code></div>
+        <div><strong>Developer Contact:</strong> <a href="mailto:techshivam0616@gmail.com">techshivam0616@gmail.com</a></div>
+      </div>
+    </main>
+
+    <footer>
+      &copy; 2026 Truth &amp; Dare (com.truthdare.techshivam). All rights reserved.
+    </footer>
+  </div>
+
+</body>
+</html>
